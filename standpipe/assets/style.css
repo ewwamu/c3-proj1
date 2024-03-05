@@ -1,0 +1,193 @@
+canvas {
+    z-index: -99;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+}
+
+body{
+    font-family: 'Helvetica';
+    height: 100vh;
+    background-color: lightgreen;
+    /* display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));    
+    grid-template-rows: auto;
+    column-gap: .25rem;
+    row-gap: .25rem; */
+}
+
+@font-face {
+    font-family: 'Mango Grotesque';
+    src:    url('./fonts/MangoGrotesque-SemiBold.woff') format('woff'),
+            url('./fonts/MangoGrotesque-SemiBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* .banner {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100rem;
+} */
+
+marquee {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100rem;
+    background-color: lightgreen;
+    font-family: 'Mango Grotesque';
+    padding: 0.5rem 0rem 0rem 0rem;
+    font-size: 4.5rem;
+}
+
+.menu {
+    float: left;
+    margin: -5px;
+    width: 15%;
+    justify-content: center;
+    padding: 1rem;
+    height: 100%;
+    background: lightgreen;
+    color:black;
+    overflow: scroll;
+}
+
+.article {
+    float: left;
+    width: 85%;
+    height: 100%;
+    background: none/*#f1f1f1*/;
+    overflow: scroll;
+    padding: 0rem;
+}
+/* 
+.article {
+    margin: auto;
+} */
+
+b {
+  padding: 10px 10px 0px 10px;
+  background: linear-gradient(to right, black 50%, lightgreen 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  color: black;
+  transition: all .6s ease-out;
+}
+
+b:hover {
+    background-position: left bottom;
+    color: lightgreen;  
+  }
+b:hover:after{
+  content: url(../../assets/img/mini.png);
+  position: absolute;
+  left: 27%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+    position: relative;
+    padding: 1.5rem;
+    font-family: 'Helvetica';
+    width: 40%;
+    z-index: 1;
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 0;
+    grid-row-end: 1; */
+}
+
+.nyt-quote {
+    margin: 0rem .5rem .5rem 3.5rem;
+}
+
+.buttons {
+    padding: .25rem;
+    position: relative;
+    justify-content: center;
+}
+
+.btn{
+    position: relative;
+    font-family: 'Helvetica';
+    font-size: 1.3rem;
+    border: solid black 1px;
+    border-radius: 40px;
+    margin-bottom: 2.25rem;
+    padding: 2rem 16px;
+    width: 11rem;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+#one {
+    margin-top: 1.5rem;
+}
+
+#one:hover {
+    border: 1px solid darkblue; /*#f7db26*/
+    background-color: lightskyblue;
+    color: darkblue;
+    transition: transform 1s ease-in-out;
+    font-weight: bold;
+}
+
+#two:hover{
+    border: 1px solid #f7db26; /*#f7db26*/
+    background-color: darkorange;
+    color: #f7db26;
+    transition: transform 1s ease-in-out;
+    font-weight: bold;
+
+}
+
+#three:hover{
+    border: 1px solid darkgreen; /*#f7db26*/
+    background-color: lightgreen;
+    color: darkgreen;
+    transition: transform 1s ease-in-out;
+    font-weight: bold;
+}
+
+#four:hover{
+    border: 1px solid red; /*#f7db26*/
+    background-color: darksalmon;
+    color: red;
+    transition: transform 1s ease-in-out;
+    font-weight: bold;
+
+}
+
+#five:hover{
+    border: 2px solid mediumvioletred; /*#f7db26*/
+    background-color: hotpink;
+    color: mediumvioletred;
+    transition: transform 1s ease-in-out;
+    font-weight: bold;
+
+}
+/* .btn:hover{
+    background-color:#ddd;
+} */
+
+/* #foo {
+    transition: opacity 0.6s ease-out;
+  }
+  
+  .inactive {
+    opacity: 0;
+  } */
